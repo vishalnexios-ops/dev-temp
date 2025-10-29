@@ -96,11 +96,11 @@ export default function Home() {
           <div className="space-y-8">
             {[
               {
-                title: "Full Stack Developer",
+                title: "Nexios Technologies LLP - Full Stack Developer",
                 desc: "Developed multiple production-grade web apps using Next.js, Angular, and Node.js with performance and scalability in focus.",
               },
               {
-                title: "Backend Developer",
+                title: "Bytesved Technologies - Full Stack Developer",
                 desc: "Built robust APIs with NestJS, MongoDB, MySQL, and PostgreSQL, optimizing queries and system performance.",
               },
             ].map((job, i) => (
