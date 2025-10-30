@@ -35,7 +35,7 @@ export default function Home() {
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 blur-3xl opacity-25 animate-pulse"></div>
           <Image
-            src="/profile.jpg"
+            src="/profile.png"
             alt="Profile"
             width={160}
             height={160}
@@ -126,16 +126,16 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { title: "Estipal Platform", desc: "Optimized full-stack platform with better code structure and faster response times.", img: "/projects/estipal.jpg" },
-            { title: "Portfolio Website", desc: "Personal developer portfolio built with Next.js, Tailwind, and smooth animations.", img: "/projects/portfolio.jpg" },
-            { title: "E-commerce API", desc: "RESTful API for an online store using NestJS, PostgreSQL, and JWT authentication.", img: "/projects/api.jpg" },
-            { title: "Task Manager App", desc: "Full-featured task management system built with Next.js and MongoDB.", img: "/projects/taskmanager.jpg" },
-            { title: "Chat Application", desc: "Real-time chat app using Socket.io, Node.js, and React frontend.", img: "/projects/chatapp.jpg" },
-            { title: "Blog Platform", desc: "Multi-user blogging system with markdown editor and comment moderation.", img: "/projects/blog.jpg" },
-            { title: "Finance Dashboard", desc: "Interactive dashboard for tracking expenses and analytics built with React & Chart.js.", img: "/projects/dashboard.jpg" },
-            { title: "Landing Page Collection", desc: "Series of marketing landing pages optimized for conversions using Next.js.", img: "/projects/landingpages.jpg" },
-            { title: "Weather Forecast App", desc: "Next.js weather app using OpenWeather API with beautiful UI and dark mode.", img: "/projects/weather.jpg" },
-            { title: "Portfolio CMS", desc: "Custom headless CMS built with Node.js, MongoDB, and Admin Panel integration.", img: "/projects/cms.jpg" },
+            { title: "Estipal Auction Platform (Api)", desc: "A robust backend built with Node.js, Express, and MySQL to power real-time online auctions. Designed for scalability, secure bidding, and lightning-fast data handling with a clean API architecture.", img: "/ESTIPAL.png" },
+            { title: "Vishalji.in (E-commerce API)", desc: "A secure and scalable e-commerce backend built with Node.js, Express, and MySQL, integrated with Razorpay for seamless online payments and smooth order management.", img: "/VISHALJI.png" },
+            { title: "Coupinos (Fullstack)", desc: "A full-stack web application built with Node.js, Angular, and MongoDB, featuring a RESTful API, secure authentication, and dynamic user interface for a smooth shopping experience.", img: "/COUPINO.png" },
+            { title: "Coupinos App (Api)", desc: "A powerful backend API for the Coupinos mobile app, developed using Node.js and MongoDB, offering secure authentication, task handling, and smooth data synchronization.", img: "/COUPINO_APP.png" },
+            { title: "Abzorb (Frontend)", desc: "A responsive risk and employee management dashboard built with Angular, offering real-time analytics, data visualization, and seamless integration with the backend API.", img: "/ABZORB.png" },
+            { title: "kennedys (Frontend)", desc: "A comprehensive risk and employee management dashboard built with Angular, offering real-time reporting, performance tracking, and smart analytics visualization.", img: "/kennedy1.png" },
+            { title: "Uegcl (Frontend)", desc: "An advanced employee and risk management platform developed with Angular, featuring interactive analytics, secure data handling, and responsive UI design.", img: "/uegcl.png" },
+            { title: "Zaverchand Meghani App (Fullstack)", desc: "Series of marketing landing pages optimized for conversions using Next.js.", img: "/ZAVERCHAND MEGHANI APP.png" },
+            { title: "History Of Rajasthan App (Fullstack)", desc: "Next.js weather app using OpenWeather API with beautiful UI and dark mode.", img: "/hor.png" },
+            // { title: "Portfolio CMS", desc: "Custom headless CMS built with Node.js, MongoDB, and Admin Panel integration.", img: "/projects/cms.jpg" },
           ].map((proj, i) => (
             <div
               key={i}
