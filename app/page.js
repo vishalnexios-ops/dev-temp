@@ -133,8 +133,8 @@ export default function Home() {
             { title: "Abzorb (Frontend)", desc: "A responsive risk and employee management dashboard built with Angular, offering real-time analytics, data visualization, and seamless integration with the backend API.", img: "/ABZORB.png" },
             { title: "kennedys (Frontend)", desc: "A comprehensive risk and employee management dashboard built with Angular, offering real-time reporting, performance tracking, and smart analytics visualization.", img: "/kennedy1.png" },
             { title: "Uegcl (Frontend)", desc: "An advanced employee and risk management platform developed with Angular, featuring interactive analytics, secure data handling, and responsive UI design.", img: "/uegcl.png" },
-            { title: "Zaverchand Meghani App (Fullstack)", desc: "Series of marketing landing pages optimized for conversions using Next.js.", img: "/ZAVERCHAND MEGHANI APP.png" },
-            { title: "History Of Rajasthan App (Fullstack)", desc: "Next.js weather app using OpenWeather API with beautiful UI and dark mode.", img: "/hor.png" },
+            { title: "Zaverchand Meghani App (Fullstack)", desc: "A fullstack mobile application on the famous gujarati literature book built with Node.js, MongoDB, and React Native.", img: "/ZAVERCHAND MEGHANI APP.png" },
+            { title: "History Of Rajasthan App (Fullstack)", desc: "A fullstack mobile application based on the famous 'History of Rajasthan' book, built with Node.js, MongoDB, and React Native.", img: "/hor.png" },
             // { title: "Portfolio CMS", desc: "Custom headless CMS built with Node.js, MongoDB, and Admin Panel integration.", img: "/projects/cms.jpg" },
           ].map((proj, i) => (
             <div
