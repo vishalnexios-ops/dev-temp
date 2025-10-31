@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   const [dark, setDark] = useState(true);
@@ -9,6 +10,69 @@ export default function Home() {
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
+
+   const projects = [
+    { 
+      title: "Estipal Auction Platform (API)", 
+      desc: "A robust backend built with Node.js, Express, and MySQL to power real-time online auctions. Designed for scalability, secure bidding, and lightning-fast data handling with a clean API architecture.", 
+      img: "/ESTIPAL.png", 
+      link: "https://estipal-nine.vercel.app/login" 
+     },
+     {
+       title: "Agile Insurer Portal (Fullstack)",
+       desc: "An insurance management portal developed using Angular, Node.js, and MySQL. Includes modules for user, driver, policyholder, and claim management with full CRUD APIs, Angular reactive forms, and strong backend logic for structured data handling.",
+       img: "/agile.png",
+       link: "https://insurer-agile-uat.dezignspace.io"
+     },
+     { 
+      title: "Vishalji.in (E-commerce API)", 
+      desc: "A secure and scalable e-commerce backend built with Node.js, Express, and MySQL, integrated with Razorpay for seamless online payments and smooth order management.", 
+      img: "/VISHALJI.png", 
+      link: "https://www.vishalji.in/" 
+    },
+    { 
+      title: "Coupinos (Fullstack)", 
+      desc: "A full-stack web application built with Node.js, Angular, and MongoDB, featuring a RESTful API, secure authentication, and dynamic user interface for a smooth shopping experience.", 
+      img: "/COUPINO.png", 
+      link: "https://coupinos.de/" 
+    },
+    { 
+      title: "Coupinos App (API)", 
+      desc: "A powerful backend API for the Coupinos mobile app, developed using Node.js and MongoDB, offering secure authentication, task handling, and smooth data synchronization.", 
+      img: "/COUPINO_APP.png", 
+      link: "https://play.google.com/store/apps/details?id=de.rieco.coupinos" 
+    },
+    { 
+      title: "Abzorb (Frontend)", 
+      desc: "A responsive risk and employee management dashboard built with Angular, offering real-time analytics, data visualization, and seamless integration with the backend API.", 
+      img: "/ABZORB.png", 
+      link: "https://abzorb.isorobot.io/" 
+    },
+    { 
+      title: "Kennedys (Frontend)", 
+      desc: "A comprehensive risk and employee management dashboard built with Angular, offering real-time reporting, performance tracking, and smart analytics visualization.", 
+      img: "/kennedy1.png", 
+      link: "https://kennedys.isorobot.io/" 
+    },
+    { 
+      title: "Uegcl (Frontend)", 
+      desc: "An advanced employee and risk management platform developed with Angular, featuring interactive analytics, secure data handling, and responsive UI design.", 
+      img: "/uegcl.png", 
+      link: "https://www.uegcl.com/" 
+    },
+    { 
+      title: "Zaverchand Meghani App (Fullstack)", 
+      desc: "A fullstack mobile application on the famous Gujarati literature book built with Node.js, MongoDB, and React Native.", 
+      img: "/ZAVERCHAND MEGHANI APP.png", 
+      link: "https://play.google.com/store/apps/details?id=com.javerchand_meghani.zaverchand_meghani" 
+    },
+    { 
+      title: "History Of Rajasthan App (Fullstack)", 
+      desc: "A fullstack mobile application based on the famous 'History of Rajasthan' book, built with Node.js, MongoDB, and React Native.", 
+      img: "/hor.png", 
+      link: "https://play.google.com/store/apps/details?id=com.annals_and_antiquities_of_rajasthan.James_Tod.History_Of_Rajsthan" 
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0f0f10] via-[#0d0d0e] to-black text-zinc-100 font-[Inter] selection:bg-cyan-500/30 transition-all duration-300">
@@ -119,47 +183,39 @@ export default function Home() {
       </section>
 
       {/* Portfolio */}
-      <section id="portfolio" className="px-6 md:px-10 py-20 max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center text-cyan-400">
-          Portfolio
-        </h2>
+    <section id="portfolio" className="px-6 md:px-10 py-20 max-w-6xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center text-cyan-400">
+        Portfolio
+      </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            { title: "Estipal Auction Platform (Api)", desc: "A robust backend built with Node.js, Express, and MySQL to power real-time online auctions. Designed for scalability, secure bidding, and lightning-fast data handling with a clean API architecture.", img: "/ESTIPAL.png" },
-            { title: "Vishalji.in (E-commerce API)", desc: "A secure and scalable e-commerce backend built with Node.js, Express, and MySQL, integrated with Razorpay for seamless online payments and smooth order management.", img: "/VISHALJI.png" },
-            { title: "Coupinos (Fullstack)", desc: "A full-stack web application built with Node.js, Angular, and MongoDB, featuring a RESTful API, secure authentication, and dynamic user interface for a smooth shopping experience.", img: "/COUPINO.png" },
-            { title: "Coupinos App (Api)", desc: "A powerful backend API for the Coupinos mobile app, developed using Node.js and MongoDB, offering secure authentication, task handling, and smooth data synchronization.", img: "/COUPINO_APP.png" },
-            { title: "Abzorb (Frontend)", desc: "A responsive risk and employee management dashboard built with Angular, offering real-time analytics, data visualization, and seamless integration with the backend API.", img: "/ABZORB.png" },
-            { title: "kennedys (Frontend)", desc: "A comprehensive risk and employee management dashboard built with Angular, offering real-time reporting, performance tracking, and smart analytics visualization.", img: "/kennedy1.png" },
-            { title: "Uegcl (Frontend)", desc: "An advanced employee and risk management platform developed with Angular, featuring interactive analytics, secure data handling, and responsive UI design.", img: "/uegcl.png" },
-            { title: "Zaverchand Meghani App (Fullstack)", desc: "A fullstack mobile application on the famous gujarati literature book built with Node.js, MongoDB, and React Native.", img: "/ZAVERCHAND MEGHANI APP.png" },
-            { title: "History Of Rajasthan App (Fullstack)", desc: "A fullstack mobile application based on the famous 'History of Rajasthan' book, built with Node.js, MongoDB, and React Native.", img: "/hor.png" },
-            // { title: "Portfolio CMS", desc: "Custom headless CMS built with Node.js, MongoDB, and Admin Panel integration.", img: "/projects/cms.jpg" },
-          ].map((proj, i) => (
-            <div
-              key={i}
-              className="group relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-cyan-400/40 hover:shadow-lg hover:shadow-cyan-500/10 transition"
-            >
-              <div className="overflow-hidden aspect-video">
-                <Image
-                  src={proj.img}
-                  alt={proj.title}
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-cyan-300 group-hover:text-cyan-400 transition">
-                  {proj.title}
-                </h3>
-                <p className="text-zinc-400 mt-2 text-sm">{proj.desc}</p>
-              </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((proj, i) => (
+          <Link
+            key={i}
+            href={proj.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-cyan-400/40 hover:shadow-lg hover:shadow-cyan-500/10 transition block"
+          >
+            <div className="overflow-hidden aspect-video">
+              <Image
+                src={proj.img}
+                alt={proj.title}
+                width={600}
+                height={400}
+                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
-          ))}
-        </div>
-      </section>
+            <div className="p-6">
+              <h3 className="text-lg font-semibold text-cyan-300 group-hover:text-cyan-400 transition">
+                {proj.title}
+              </h3>
+              <p className="text-zinc-400 mt-2 text-sm">{proj.desc}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
 
       {/* Contact */}
       <section id="contact" className="px-6 py-20 bg-gradient-to-b from-zinc-950 to-black text-center">
